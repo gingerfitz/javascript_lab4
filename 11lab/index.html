@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Labs Day 11</title>
+  </head>
+  <body>
+    <!-- Vending Machine -->
+    <section>
+      <div class="vending">
+        <p class="total"></p>
+        <button class="vmButton" data-amount="2">Lime Cola $2.00</button>
+        <button class="vmButton" data-amount="3">Salted Peanuts $3.00</button>
+        <button class="vmButton" data-amount="4">Chocolate Bar $4.00</button>
+        <button class="vmButton" data-amount="6">Fruit Gummies $6.00</button>
+      </div>
+    </section>
+
+    <!-- Make Money -->
+    <section>
+      <form class="make-money">
+        <label for="number" id="number" name="number">How Many?</label>
+        <input type="number" name="number" />
+
+        <label for="coin">Which Coin?</label>
+        <select id="coin" name="coin">
+          <option value="penny " data-amount="1">Penny</option>
+          <option value="nickle " data-amount="5">Nickle</option>
+          <option value="dime " data-amount="10">Dime</option>
+          <option value="quarter " data-amount="25">Quarter</option>
+        </select>
+        <button class="submit">Submit</button>
+        <div class="display-coins"></div>
+      </form>
+    </section>
+    <section>
+      <div class="bulb dark">Light Bulb</div>
+      <button class="on button">On</button>
+      <button class="off button">Off</button>
+      <button class="toggle button">Toggle</button>
+      <button class="end button">End</button>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
